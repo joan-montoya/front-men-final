@@ -14,7 +14,7 @@ export default class Login extends Component {
     e.preventDefault();
     const { email, password } = this.state;
     console.log(email, password);
-    fetch("http://localhost:3000/login-user", {
+    fetch("https://chat--i.herokuapp.com/login-user", {
       method: "POST",
       crossDomain: true,
       headers: {
